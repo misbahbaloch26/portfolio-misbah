@@ -15,13 +15,15 @@ const Hero = () => {
 
         <div className="text-center text-white">
         
-          <h1 className="sm:text-3xl text-5xl font-medium title-font mb-4 text-white">
+          <h1 className="sm:text-3xl text-5xl font-medium title-font mb-4 ">
           Hello, I&apos;m Misbah Baloch, a Frontend Web Developer
           </h1>
          
           <p className="text-lg">Feel free to explore my work and get in touch!</p>
-          <Link href={'contact-me'}>
-            <button className='bg-yellow-600 text-white hover:bg-[#070524] p-3 mt-5 rounded-md'>lets get connected!</button>
+
+
+            <Link href={'contact-me'}>
+            <button className='bg-[#070524] text-yellow-300 hover:bg-yellow-600 hover:text-[#070524] p-3 mt-5 rounded-md'>lets get connected!</button>
             </Link>
         </div>
       </div>

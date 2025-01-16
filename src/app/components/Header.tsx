@@ -18,8 +18,8 @@ const Header = () => {
 
 
   return (
-    <nav className="bg-transparent p-8 fixed top-0 left-0 right-0 z-10  text-black">
-      <div className=" text-2xl max-w-screen-xl mx-auto flex justify-between items-center">
+    <nav className="bg-gray-900  relative  p-8  top-0 left-0 right-0  text-black">
+      <div className="relative z-10 text-2xl max-w-screen-xl mx-auto flex justify-between items-center">
         
         {/* Logo */}
         <div className="text-white font-bold text-2xl">
@@ -28,18 +28,23 @@ const Header = () => {
           </Link>
         </div>
 
-        {/* Desktop Links */}
-        <div className="hidden md:flex space-x-8">
-          <Link href='/About-me'>
-            <span className="text-white hover:text-yellow-500">About Me</span>
-          </Link>
-          <Link href='/projects'>
-            <span className="text-white hover:text-yellow-500">Projects</span>
-          </Link>
-          <Link href='/contact-me'>
-            <span className="text-white hover:text-yellow-500">Contact Me</span>
-          </Link>
-        </div>
+
+
+      {/**links in navbar */}
+        <div className="relative z-10 hidden md:flex space-x-8">
+  <Link href="/About-me" className="text-white hover:text-yellow-500 hover:bg-black hover:bg-opacity-50 px-2 py-1 rounded transition-all">
+    About Me
+  </Link>
+  <Link href="/projects" className="text-white hover:text-yellow-500 hover:bg-black hover:bg-opacity-50 px-2 py-1 rounded transition-all">
+    Projects
+  </Link>
+  <Link href="/contact-me" className="text-white hover:text-yellow-500 hover:bg-black hover:bg-opacity-50 px-2 py-1 rounded transition-all">
+    Contact Me
+  </Link>
+</div>
+
+
+     
 
         {/* Mobile Hamburger Menu */}
         <div className="md:hidden flex items-center">

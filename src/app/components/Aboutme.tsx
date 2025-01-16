@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'next/link'
 
 const Aboutme = () => {
   return (
@@ -31,7 +31,10 @@ Feel free to explore my work and get in touch!
         </p>
        <h2 className='text-lg text-white text-bold'>explore my <a href="/projects" className='text-blue-400 text-lg underline'>
        projects</a></h2>
+
+       <Link href='/contact-me'>
        <button className='bg-yellow-600 text-white rounded-md mt-5 p-4'>contact me</button>
+       </Link>
       </div>
       <img
         alt="ecommerce"
